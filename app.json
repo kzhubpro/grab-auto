@@ -16,7 +16,9 @@
     "ios": {
       "supportsTablet": false
     },
-    "android": {},
+    "android": {
+      "package": "com.grabauto.tool"
+    },
     "web": {
       "favicon": "./assets/images/icon.png"
     },
@@ -27,12 +29,10 @@
           "origin": "https://replit.com/"
         }
       ],
-      "expo-font",
-      "expo-web-browser"
+      "expo-font"
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
     }
   }
 }
