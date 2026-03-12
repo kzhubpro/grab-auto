@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "Grab Auto Tool"
+version = "1.0.0"
+id = "artifacts/grab-auto"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+localPort = 25876
+name = "expo"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/grab-auto run dev"
+
+[services.env]
+PORT = "25876"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/grab-auto", "run", "build"]
+run = ["pnpm", "--filter", "@workspace/grab-auto", "run", "serve"]
