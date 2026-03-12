@@ -6,6 +6,7 @@ workflows:
       node: 18
     scripts:
       - npm install
+      - npx expo prebuild
       - cd android
       - ./gradlew assembleDebug
     artifacts:
